@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<table class="">
+			<thead>
+				<tr>
+					<th>country</th>
+					<th>email</th>
+				</tr>
+			</thead>
+			<tr th:each="friend: ${listeFriends}">
+				<td th:text="${friend.country}"></td>
+				<td th:text="${friend.email}"></td>
+			</tr>
+		</table>
+</body>
+</html>
