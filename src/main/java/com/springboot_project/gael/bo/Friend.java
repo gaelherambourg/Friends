@@ -1,4 +1,4 @@
-package com.springboot_project.gael;
+package com.springboot_project.gael.bo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,9 +12,9 @@ public class Friend {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	private String firstName;
+	private String firstname;
 	
-	private String lastName;
+	private String lastname;
 	
 	private String department;
 	
@@ -26,12 +26,12 @@ public class Friend {
 		
 	}
 	
-	public Friend(String firstName, String lastName, String department, String email, String country) {
+	public Friend(String firstname, String lastname, String department, String email, String country) {
 		this.country = country;
 		this.department = department;
 		this.email = email;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.firstname = firstname;
+		this.lastname = lastname;
 	}
 
 	public Long getId() {
@@ -43,19 +43,19 @@ public class Friend {
 	}
 
 	public String getFirstName() {
-		return firstName;
+		return firstname;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstName(String firstname) {
+		this.firstname = firstname;
 	}
 
 	public String getLastName() {
-		return lastName;
+		return lastname;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastName(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getDepartment() {

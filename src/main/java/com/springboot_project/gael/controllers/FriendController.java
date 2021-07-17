@@ -1,4 +1,4 @@
-package com.springboot_project.gael;
+package com.springboot_project.gael.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot_project.gael.bo.Friend;
+import com.springboot_project.gael.services.FriendService;
 
 @RestController
 @CrossOrigin
